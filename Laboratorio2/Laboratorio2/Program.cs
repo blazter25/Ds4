@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Xml.Linq;
 
-namespasce Laboratorio2
+namespace Laboratorio2
 {
     class Program
 {
@@ -17,4 +17,16 @@ namespasce Laboratorio2
 
         Console.WriteLine(client.GetFullName());
     }
-}
+    internal class program
+        {
+            static void Main(string[] args)
+            {
+               Client client = new Client();
+                client.FirtsName = "Angel"
+               client.LastName = "Martinez";
+                client.age = 29;
+                client.Id = 1;
+
+                Console.WriteLine(client.GetFullName());
+            }
+    }
